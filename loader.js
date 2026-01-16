@@ -18,6 +18,8 @@
     }
   }
   await waitForBody();
+  await loadClient();
+  return;
 
   /* ===================== HARD BLOCK ===================== */
   document.documentElement.style.overflow = "hidden";
