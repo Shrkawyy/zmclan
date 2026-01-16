@@ -52,6 +52,7 @@
 .zynx-logo {
   width: 200px;
   height: auto;
+ border-radius: 50%;
   max-width: 70vw;
   filter: drop-shadow(0 8px 25px rgba(0, 0, 0, 0.7));
   transition: transform 0.3s ease, filter 0.3s ease, all 0.4s ease;
