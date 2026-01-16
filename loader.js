@@ -5,20 +5,6 @@
 
   const WS_VERIFY_URL = "wss://chat--nextgen676.replit.app/chat";
 
-  async function waitForBody() {
-    if (document.body) return;
-    if (document.readyState === "loading") {
-      await new Promise(r =>
-        document.addEventListener("DOMContentLoaded", r, { once: true })
-      );
-    }
-    while (!document.body) {
-      await new Promise(r => setTimeout(r, 10));
-    }
-  }
-  await waitForBody();
-
-
   async function loadClient() {
     const thirdPartyJS = [
       "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js",
